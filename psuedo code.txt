@@ -1,0 +1,29 @@
+- Binary search in pseudocode:
+	U= upper bound(array)
+	L= lower bound(array)
+	Do while L <=  U
+		Middle bound = (L+U)/2
+		If  target = array( middle bound) then 
+			Print (“the number is found with the index of :” + array(middle bound))
+			Exit loop
+			Else if target < array(middle bound) then
+				U= (middle bound -1)
+			Else if target > array(middle bound) then
+				L= (middle bound +1)
+			Else
+				Print (“ number not found in array”)
+			End if 
+		Loop 
+
+- Linear search in pseudocode:
+	For all the items in the array
+	Int counter
+	Do while counter < array size 
+		If  target == array[counter]
+Print (“the number is found with the index of :” + array(counter))	
+Exit loop
+		Else 
+			Counter = counter +1
+		End if 
+	Loop 
+
